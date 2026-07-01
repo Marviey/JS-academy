@@ -1,0 +1,102 @@
+:root {
+    /* Colors - Light Mode */
+    --primary: #6C63FF;
+    --primary-light: #8B83FF;
+    --primary-dark: #5A52D9;
+    --primary-gradient: linear-gradient(135deg, #6C63FF 0%, #8B83FF 100%);
+    --secondary: #FF6B6B;
+    --success: #4ECB71;
+    --warning: #FFD93D;
+    --danger: #FF6B6B;
+    --info: #4ECDC4;
+    
+    --bg-primary: #F8F9FE;
+    --bg-secondary: #FFFFFF;
+    --bg-tertiary: #F0F2F8;
+    --bg-card: #FFFFFF;
+    
+    --text-primary: #1A1A2E;
+    --text-secondary: #4A4A6A;
+    --text-tertiary: #8A8AA8;
+    --text-inverse: #FFFFFF;
+    
+    --border-color: #E8EAEE;
+    --shadow-sm: 0 2px 8px rgba(108, 99, 255, 0.08);
+    --shadow-md: 0 4px 20px rgba(108, 99, 255, 0.12);
+    --shadow-lg: 0 8px 40px rgba(108, 99, 255, 0.16);
+    --shadow-xl: 0 12px 60px rgba(108, 99, 255, 0.20);
+    
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    --glass-shadow: 0 8px 32px rgba(108, 99, 255, 0.12);
+    --glass-blur: blur(10px);
+    
+    /* Typography */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+    --font-size-5xl: 3rem;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    
+    /* Border Radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.5rem;
+    --radius-xl: 2rem;
+    --radius-full: 9999px;
+    
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+    --transition-slow: 500ms ease;
+    
+    /* Layout */
+    --sidebar-width: 280px;
+    --header-height: 64px;
+    --max-width: 1200px;
+    
+    /* Z-index */
+    --z-sidebar: 1000;
+    --z-header: 1001;
+    --z-modal: 2000;
+    --z-toast: 3000;
+    --z-loading: 4000;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --bg-primary: #0F0F1A;
+    --bg-secondary: #1A1A2E;
+    --bg-tertiary: #252540;
+    --bg-card: #1E1E36;
+    
+    --text-primary: #F8F9FE;
+    --text-secondary: #B8B8D8;
+    --text-tertiary: #7878A0;
+    --text-inverse: #1A1A2E;
+    
+    --border-color: #2A2A48;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 12px 60px rgba(0, 0, 0, 0.6);
+    
+    --glass-bg: rgba(26, 26, 46, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Personal Portfolio",
+      "description": "Create a portfolio website to showcase your JavaScript projects.",
+      "xp": 100,
+      "coins": 50,
+      "status": "In Progress"
+    },
+    {
+      "id": "project-2",
+      "title": "Interactive Quiz App",
+      "description": "Build a quiz app that asks questions and shows scores.",
+      "xp": 120,
+      "coins": 60,
+      "status": "Not Started"
+    },
+    {
+      "id": "project-3",
+      "title": "React Mini App",
+      "description": "Start learning React by building a small interactive app.",
+      "xp": 150,
+      "coins": 80,
+      "status": "Not Started"
+    }
+  ]
+}

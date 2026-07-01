@@ -1,0 +1,15 @@
+/* Settings page styles */
+
+.page {
+    padding: var(--spacing-xl);
+}
+
+.settings-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}

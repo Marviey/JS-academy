@@ -1,0 +1,2870 @@
+{
+  "lessons": [
+    {
+      "id": 0,
+      "title": "Introduction to Programming",
+      "description": "Learn what programming is and why it matters",
+      "level": 1,
+      "xp": 50,
+      "coins": 20,
+      "duration": "10",
+      "mission": "Understand the basics of programming and how computers follow instructions",
+      "objectives": [
+        "Understand what programming is",
+        "Learn how computers follow instructions",
+        "Write your first line of code"
+      ],
+      "story": "Think of programming like giving instructions to a robot. Just like you tell someone how to make a sandwich step by step, programming tells a computer exactly what to do. Every app, game, and website you've ever used was created by someone writing instructions for a computer to follow.",
+      "storyTitle": "Programming is Like Giving Instructions",
+      "comparisons": [
+        {
+          "icon": "\ud83e\udd16",
+          "concept": "Programming",
+          "example": "Giving step-by-step instructions to a robot"
+        },
+        {
+          "icon": "\ud83d\udcf1",
+          "concept": "Apps",
+          "example": "Following instructions to build a LEGO set"
+        },
+        {
+          "icon": "\ud83c\udf73",
+          "concept": "Recipes",
+          "example": "Following a recipe to bake a cake"
+        }
+      ],
+      "explanation": "Programming is the art of telling a computer what to do. You write code, which is a set of instructions, and the computer follows them exactly. It's like writing a recipe - if you follow the instructions correctly, you get the result you want.",
+      "codeExamples": [
+        {
+          "title": "Your First Program",
+          "code": "console.log('Hello, World!');\n// This prints a message to the console",
+          "explanation": "This is your first program! It prints 'Hello, World!' to the console. The console is like a message board where your program can show information."
+        },
+        {
+          "title": "Using Comments",
+          "code": "// This is a comment - it doesn't run\nconsole.log('This will run!');\n/* This is a multi-line\n   comment */",
+          "explanation": "Comments are notes in your code that computers ignore. They help you and others understand what your code does."
+        }
+      ],
+      "interactiveExample": {
+        "description": "Click the button to run your first program!",
+        "code": "'Hello, World!'"
+      },
+      "flashcards": [
+        {
+          "icon": "\ud83d\udcbb",
+          "question": "What is programming?",
+          "answer": "Programming is writing instructions for a computer to follow"
+        },
+        {
+          "icon": "\ud83d\udcdd",
+          "question": "What is code?",
+          "answer": "Code is the set of instructions you write for a computer"
+        },
+        {
+          "icon": "\ud83d\udccb",
+          "question": "What is a comment?",
+          "answer": "A comment is text in code that computers ignore - it's for humans to read"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is programming?",
+          "options": [
+            "Playing video games",
+            "Writing instructions for a computer",
+            "Using social media",
+            "Watching videos"
+          ],
+          "correct": "Writing instructions for a computer",
+          "xp": 10
+        },
+        {
+          "question": "What does console.log do?",
+          "options": [
+            "Prints a message to the console",
+            "Deletes a message",
+            "Creates a new file",
+            "Plays a sound"
+          ],
+          "correct": "Prints a message to the console",
+          "xp": 10
+        },
+        {
+          "question": "What is a comment in code?",
+          "options": [
+            "Text that runs on the computer",
+            "Text that computers ignore",
+            "A type of error",
+            "A programming language"
+          ],
+          "correct": "Text that computers ignore",
+          "xp": 10
+        }
+      ],
+      "summary": "Programming is the process of writing instructions for computers. You use code to tell computers exactly what to do. Every program starts with a simple idea and turns into a set of instructions that a computer can follow. Comments help you document your code for yourself and others."
+    },
+    {
+      "id": 1,
+      "title": "JavaScript Introduction",
+      "description": "Get started with JavaScript programming",
+      "level": 1,
+      "xp": 50,
+      "coins": 20,
+      "duration": "12",
+      "mission": "Learn what JavaScript is and write your first interactive code",
+      "objectives": [
+        "Understand what JavaScript is used for",
+        "Write your first JavaScript code",
+        "See the result in the console"
+      ],
+      "story": "JavaScript is like the magic that makes websites interactive. When you click a button and something happens on a webpage, that's JavaScript at work. It's the language that powers the modern web, from simple animations to complex applications like Google Maps and Facebook.",
+      "storyTitle": "JavaScript - The Magic of the Web",
+      "comparisons": [
+        {
+          "icon": "\ud83c\udf10",
+          "concept": "JavaScript",
+          "example": "The engine that powers interactive websites"
+        },
+        {
+          "icon": "\ud83c\udfae",
+          "concept": "Interactivity",
+          "example": "Making a game respond when you press a key"
+        },
+        {
+          "icon": "\ud83c\udfaa",
+          "concept": "Web Magic",
+          "example": "A magician performing tricks on stage"
+        }
+      ],
+      "explanation": "JavaScript is a programming language that runs in web browsers. It's used to create interactive web pages, web applications, games, and even server-side applications. Everything from simple animations to complex applications like Google Maps is built with JavaScript.",
+      "codeExamples": [
+        {
+          "title": "Your First JavaScript",
+          "code": "let message = 'Hello from JavaScript!';\nconsole.log(message);",
+          "explanation": "This creates a variable called 'message' and prints it to the console. Variables are like labeled boxes where you can store information."
+        },
+        {
+          "title": "Simple Math",
+          "code": "let x = 5;\nlet y = 3;\nlet sum = x + y;\nconsole.log('The sum is:', sum);",
+          "explanation": "JavaScript can do math too! Here we add two numbers and display the result."
+        }
+      ],
+      "interactiveExample": {
+        "description": "Click to see JavaScript in action!",
+        "code": "'Hello from JavaScript Academy!'"
+      },
+      "flashcards": [
+        {
+          "icon": "\ud83c\udf10",
+          "question": "What is JavaScript used for?",
+          "answer": "Creating interactive web pages and web applications"
+        },
+        {
+          "icon": "\ud83d\udca1",
+          "question": "Where does JavaScript run?",
+          "answer": "In web browsers and on servers"
+        },
+        {
+          "icon": "\ud83d\udce6",
+          "question": "What is a variable?",
+          "answer": "A variable is like a labeled box that stores information"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is JavaScript used for?",
+          "options": [
+            "Styling web pages",
+            "Creating interactive web applications",
+            "Writing documents",
+            "Drawing pictures"
+          ],
+          "correct": "Creating interactive web applications",
+          "xp": 10
+        },
+        {
+          "question": "Where does JavaScript typically run?",
+          "options": [
+            "In a web browser",
+            "On a calculator",
+            "In a microwave",
+            "On a typewriter"
+          ],
+          "correct": "In a web browser",
+          "xp": 10
+        },
+        {
+          "question": "What is a variable in JavaScript?",
+          "options": [
+            "A type of error",
+            "A container for storing data",
+            "A way to comment code",
+            "A style sheet"
+          ],
+          "correct": "A container for storing data",
+          "xp": 10
+        }
+      ],
+      "summary": "JavaScript is a powerful programming language used to create interactive websites and applications. It runs in web browsers and can do everything from simple animations to complex web applications. Variables are containers that store data, and you can use them to hold information like text, numbers, and more."
+    },
+    {
+      "id": 2,
+      "title": "Variables - Storage Boxes",
+      "description": "Learn how to store and manage data with variables",
+      "level": 1,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master variables and learn how to store different types of data",
+      "objectives": [
+        "Understand what variables are",
+        "Learn how to declare variables",
+        "Store different types of data",
+        "Use variables in your code"
+      ],
+      "story": "Imagine you have a set of boxes in your room. Each box has a label, and you can put different things inside - books, toys, clothes. Variables in programming work exactly the same way! They're labeled boxes where you store information that you might need later.",
+      "storyTitle": "Variables = Storage Boxes",
+      "comparisons": [
+        {
+          "icon": "\ud83d\udce6",
+          "concept": "Variable",
+          "example": "A labeled box that stores information"
+        },
+        {
+          "icon": "\ud83c\udff7\ufe0f",
+          "concept": "Variable Name",
+          "example": "The label on the box"
+        },
+        {
+          "icon": "\ud83d\udcdd",
+          "concept": "Variable Value",
+          "example": "What's inside the box"
+        }
+      ],
+      "explanation": "Variables are containers that store data. You give them a name and put a value inside. Think of them like boxes with labels - you can put things in, take things out, and change what's inside whenever you want.",
+      "codeExamples": [
+        {
+          "title": "Creating Variables",
+          "code": "let name = 'Alice';      // Text (string)\nlet age = 25;           // Number\nlet isStudent = true;   // Boolean (true/false)\nlet hobbies = ['reading', 'coding', 'gaming']; // Array\n\nconsole.log('Name:', name);\nconsole.log('Age:', age);\nconsole.log('Is student?', isStudent);\nconsole.log('Hobbies:', hobbies);",
+          "explanation": "Variables can store different types of data: text (strings), numbers, booleans (true/false), and arrays (lists of items)."
+        },
+        {
+          "title": "Changing Variables",
+          "code": "let score = 10;\nconsole.log('Score:', score);\n\nscore = 20; // Change the value\nconsole.log('New score:', score);\n\nscore = score + 5; // Update using current value\nconsole.log('Updated score:', score);",
+          "explanation": "You can change what's stored in a variable at any time. You can even use the current value to compute a new value."
+        }
+      ],
+      "interactiveExample": {
+        "description": "Click to see variables in action!",
+        "code": "const name = 'Student';\nconst age = 20;\n`Hello, ${name}! You are ${age} years old.`"
+      },
+      "flashcards": [
+        {
+          "icon": "\ud83d\udce6",
+          "question": "What is a variable?",
+          "answer": "A container that stores data with a name"
+        },
+        {
+          "icon": "\ud83d\udcdd",
+          "question": "What types of data can variables store?",
+          "answer": "Strings (text), Numbers, Booleans, Arrays, Objects, and more"
+        },
+        {
+          "icon": "\ud83d\udd04",
+          "question": "Can you change a variable's value?",
+          "answer": "Yes! You can assign a new value to a variable anytime"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is a variable?",
+          "options": [
+            "A type of error",
+            "A container for storing data",
+            "A programming language",
+            "A web browser"
+          ],
+          "correct": "A container for storing data",
+          "xp": 10
+        },
+        {
+          "question": "Which is a valid variable name in JavaScript?",
+          "options": [
+            "2ndPlace",
+            "my-variable",
+            "myVariable",
+            "var"
+          ],
+          "correct": "myVariable",
+          "xp": 10
+        },
+        {
+          "question": "What does this code do?\nlet x = 5;\nx = x + 3;",
+          "options": [
+            "Adds 3 to x, making it 8",
+            "Makes x equal to 3",
+            "Causes an error",
+            "Does nothing"
+          ],
+          "correct": "Adds 3 to x, making it 8",
+          "xp": 10
+        }
+      ],
+      "summary": "Variables are containers that store data. They can hold different types of information like text, numbers, true/false values, and lists. You can create variables, give them values, and change those values whenever you need. This is the foundation of programming!"
+    },
+    {
+      "id": 3,
+      "title": "Data Types - Different Types of Information",
+      "description": "Explore the different types of data in JavaScript",
+      "level": 1,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Understand the different data types and when to use each one",
+      "objectives": [
+        "Learn the main data types in JavaScript",
+        "Understand strings, numbers, and booleans",
+        "Work with arrays and objects",
+        "Use type checking in your code"
+      ],
+      "story": "Think about how you organize information in real life. You have names (text), ages (numbers), yes/no answers (booleans), and shopping lists (arrays). JavaScript organizes information in similar ways using different data types.",
+      "storyTitle": "Data Types = Organizing Information",
+      "comparisons": [
+        {
+          "icon": "\ud83d\udcdd",
+          "concept": "String",
+          "example": "A name: 'Alice'"
+        },
+        {
+          "icon": "\ud83d\udd22",
+          "concept": "Number",
+          "example": "Age: 25 or 3.14"
+        },
+        {
+          "icon": "\u2705",
+          "concept": "Boolean",
+          "example": "True or False"
+        },
+        {
+          "icon": "\ud83d\udccb",
+          "concept": "Array",
+          "example": "A shopping list: ['apples', 'bread']"
+        }
+      ],
+      "explanation": "Data types tell JavaScript what kind of information you're working with. Strings are text, numbers are for math, booleans are for true/false, arrays are for lists, and objects are for storing related information together.",
+      "codeExamples": [
+        {
+          "title": "Working with Different Types",
+          "code": "// String - text\nlet name = 'Alice';\nlet greeting = \"Hello, World!\";\n\n// Number - numeric values\nlet age = 25;\nlet price = 19.99;\nlet negative = -5;\n\n// Boolean - true or false\nlet isStudent = true;\nlet isLoggedIn = false;\n\n// Array - lists of items\nlet colors = ['red', 'green', 'blue'];\nlet scores = [85, 92, 78, 96];\n\n// Object - collections of related data\nlet person = {\n    name: 'Bob',\n    age: 30,\n    city: 'New York'\n};\n\nconsole.log('Name:', name);\nconsole.log('Age:', age);\nconsole.log('Is student?', isStudent);\nconsole.log('Colors:', colors);\nconsole.log('Person:', person);",
+          "explanation": "JavaScript has several built-in data types. Strings are text, numbers are for math, booleans are for true/false, arrays are for lists, and objects are for organizing related data."
+        },
+        {
+          "title": "Checking Types",
+          "code": "let text = 'Hello';\nlet number = 42;\nlet flag = true;\nlet list = [1, 2, 3];\nlet obj = { key: 'value' };\n\nconsole.log('Type of text:', typeof text);\nconsole.log('Type of number:', typeof number);\nconsole.log('Type of flag:', typeof flag);\nconsole.log('Type of list:', typeof list);\nconsole.log('Type of obj:', typeof obj);",
+          "explanation": "You can use the typeof operator to check what type of data a variable contains."
+        }
+      ],
+      "interactiveExample": {
+        "description": "Click to see different data types in action!",
+        "code": "const data = {\n  name: 'Alice',\n  age: 25,\n  isStudent: true,\n  hobbies: ['reading', 'coding']\n};\n`${data.name} is ${data.age} years old and likes ${data.hobbies.join(' and ')}`"
+      },
+      "flashcards": [
+        {
+          "icon": "\ud83d\udcdd",
+          "question": "What is a String?",
+          "answer": "A sequence of characters used for text"
+        },
+        {
+          "icon": "\ud83d\udd22",
+          "question": "What is a Number?",
+          "answer": "Numeric values for math operations"
+        },
+        {
+          "icon": "\u2705",
+          "question": "What is a Boolean?",
+          "answer": "A true or false value"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What type of data is 'Hello World'?",
+          "options": [
+            "Number",
+            "String",
+            "Boolean",
+            "Array"
+          ],
+          "correct": "String",
+          "xp": 10
+        },
+        {
+          "question": "What type of data is true or false?",
+          "options": [
+            "Number",
+            "String",
+            "Boolean",
+            "Array"
+          ],
+          "correct": "Boolean",
+          "xp": 10
+        },
+        {
+          "question": "What is an Array used for?",
+          "options": [
+            "Storing a single number",
+            "Storing a list of items",
+            "Storing true/false values",
+            "Storing text only"
+          ],
+          "correct": "Storing a list of items",
+          "xp": 10
+        }
+      ],
+      "summary": "JavaScript has different data types for different kinds of information: strings for text, numbers for math, booleans for true/false, arrays for lists, and objects for organizing related data. Understanding data types helps you choose the right type for your information."
+    },
+    {
+      "id": 4,
+      "title": "Operators - Performing Actions",
+      "description": "Learn how to perform actions with operators",
+      "level": 1,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master operators and use them to manipulate data",
+      "objectives": [
+        "Understand arithmetic operators",
+        "Learn comparison operators",
+        "Work with logical operators",
+        "Combine operators in expressions"
+      ],
+      "story": "Think about how you use a calculator to add, subtract, multiply, and divide numbers. Operators in programming are like the buttons on a calculator - they let you perform operations on your data.",
+      "storyTitle": "Operators = Actions on Data",
+      "comparisons": [
+        {
+          "icon": "\u2795",
+          "concept": "Arithmetic",
+          "example": "5 + 3 = 8"
+        },
+        {
+          "icon": "\u2696\ufe0f",
+          "concept": "Comparison",
+          "example": "5 > 3 is True"
+        },
+        {
+          "icon": "\ud83d\udd00",
+          "concept": "Logical",
+          "example": "True AND False is False"
+        }
+      ],
+      "explanation": "Operators are symbols that perform actions on your data. Arithmetic operators do math (+, -, *, /). Comparison operators compare values (>, <, ==, ===). Logical operators combine conditions (&&, ||, !).",
+      "codeExamples": [
+        {
+          "title": "Arithmetic Operators",
+          "code": "let a = 10;\nlet b = 3;\n\nconsole.log('Addition:', a + b);      // 13\nconsole.log('Subtraction:', a - b);   // 7\nconsole.log('Multiplication:', a * b); // 30\nconsole.log('Division:', a / b);       // 3.33...\nconsole.log('Modulus (remainder):', a % b); // 1\nconsole.log('Exponent:', a ** b);      // 1000",
+          "explanation": "Arithmetic operators perform mathematical operations. The modulus operator (%) gives you the remainder of a division."
+        },
+        {
+          "title": "Comparison Operators",
+          "code": "let x = 5;\nlet y = 10;\n\nconsole.log('Equal:', x == y);      // false\nconsole.log('Not equal:', x != y);   // true\nconsole.log('Greater than:', x > y); // false\nconsole.log('Less than:', x < y);    // true\nconsole.log('Greater or equal:', x >= y); // false\nconsole.log('Less or equal:', x <= y);    // true\n\n// Strict equality (checks type too)\nconsole.log('Strict equal:', 5 === '5'); // false",
+          "explanation": "Comparison operators compare two values and return true or false. The strict equality operator (===) also checks that the data types match."
+        },
+        {
+          "title": "Logical Operators",
+          "code": "let isStudent = true;\nlet hasID = true;\nlet isEmployee = false;\n\n// AND - both must be true\nconsole.log('Student AND has ID:', isStudent && hasID); // true\nconsole.log('Student AND employee:', isStudent && isEmployee); // false\n\n// OR - at least one must be true\nconsole.log('Student OR employee:', isStudent || isEmployee); // true\n\n// NOT - reverses the value\nconsole.log('NOT student:', !isStudent); // false\nconsole.log('NOT employee:', !isEmployee); // true",
+          "explanation": "Logical operators combine conditions. AND (&&) requires both to be true. OR (||) requires at least one to be true. NOT (!) reverses the value."
+        }
+      ],
+      "interactiveExample": {
+        "description": "Click to see operators in action!",
+        "code": "const x = 10;\nconst y = 5;\nconst sum = x + y;\nconst isGreater = x > y;\n`${x} + ${y} = ${sum}, and ${x} > ${y} is ${isGreater}`"
+      },
+      "flashcards": [
+        {
+          "icon": "\u2795",
+          "question": "What does the + operator do?",
+          "answer": "Adds numbers together"
+        },
+        {
+          "icon": "\u2696\ufe0f",
+          "question": "What does the === operator do?",
+          "answer": "Checks if two values are equal AND the same type"
+        },
+        {
+          "icon": "\ud83d\udd00",
+          "question": "What does the && operator do?",
+          "answer": "Returns true only if both conditions are true"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does 10 + 5 equal?",
+          "options": [
+            "5",
+            "10",
+            "15",
+            "50"
+          ],
+          "correct": "15",
+          "xp": 10
+        },
+        {
+          "question": "What does 10 % 3 equal? (Hint: % is modulus - remainder)",
+          "options": [
+            "3",
+            "1",
+            "0",
+            "7"
+          ],
+          "correct": "1",
+          "xp": 10
+        },
+        {
+          "question": "What is the result of 5 > 3?",
+          "options": [
+            "true",
+            "false",
+            "5",
+            "3"
+          ],
+          "correct": "true",
+          "xp": 10
+        },
+        {
+          "question": "What does true && false equal?",
+          "options": [
+            "true",
+            "false",
+            "maybe",
+            "error"
+          ],
+          "correct": "false",
+          "xp": 10
+        }
+      ],
+      "summary": "Operators are symbols that perform actions on your data. Arithmetic operators (+, -, *, /, %) do math. Comparison operators (>, <, ==, ===) compare values. Logical operators (&&, ||, !) combine conditions. Master these, and you can manipulate data effectively!"
+    },
+    {
+      "id": 5,
+      "title": "Data Types and Values",
+      "description": "Learn data types and values and build stronger JavaScript skills.",
+      "level": 1,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master data types and values and use it in real code.",
+      "objectives": [
+        "Understand the basics of data types and values",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Data Types and Values is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Data Types and Values matters",
+      "explanation": "This lesson explains the key ideas behind data types and values and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of data types and values, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of data types and values?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use data types and values",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use data types and values",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to data types and values?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is data types and values useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Operators and Expressions",
+      "description": "Learn operators and expressions and build stronger JavaScript skills.",
+      "level": 2,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master operators and expressions and use it in real code.",
+      "objectives": [
+        "Understand the basics of operators and expressions",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Operators and Expressions is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Operators and Expressions matters",
+      "explanation": "This lesson explains the key ideas behind operators and expressions and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of operators and expressions, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of operators and expressions?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use operators and expressions",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use operators and expressions",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to operators and expressions?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is operators and expressions useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Control Flow",
+      "description": "Learn control flow and build stronger JavaScript skills.",
+      "level": 2,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master control flow and use it in real code.",
+      "objectives": [
+        "Understand the basics of control flow",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Control Flow is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Control Flow matters",
+      "explanation": "This lesson explains the key ideas behind control flow and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of control flow, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of control flow?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use control flow",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use control flow",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to control flow?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is control flow useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Loops and Iteration",
+      "description": "Learn loops and iteration and build stronger JavaScript skills.",
+      "level": 2,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master loops and iteration and use it in real code.",
+      "objectives": [
+        "Understand the basics of loops and iteration",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Loops and Iteration is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Loops and Iteration matters",
+      "explanation": "This lesson explains the key ideas behind loops and iteration and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of loops and iteration, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of loops and iteration?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use loops and iteration",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use loops and iteration",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to loops and iteration?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is loops and iteration useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Functions and Reusability",
+      "description": "Learn functions and reusability and build stronger JavaScript skills.",
+      "level": 2,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master functions and reusability and use it in real code.",
+      "objectives": [
+        "Understand the basics of functions and reusability",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Functions and Reusability is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Functions and Reusability matters",
+      "explanation": "This lesson explains the key ideas behind functions and reusability and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of functions and reusability, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of functions and reusability?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use functions and reusability",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use functions and reusability",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to functions and reusability?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is functions and reusability useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Arrays and Lists",
+      "description": "Learn arrays and lists and build stronger JavaScript skills.",
+      "level": 2,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master arrays and lists and use it in real code.",
+      "objectives": [
+        "Understand the basics of arrays and lists",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Arrays and Lists is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Arrays and Lists matters",
+      "explanation": "This lesson explains the key ideas behind arrays and lists and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of arrays and lists, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of arrays and lists?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use arrays and lists",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use arrays and lists",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to arrays and lists?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is arrays and lists useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Objects and Properties",
+      "description": "Learn objects and properties and build stronger JavaScript skills.",
+      "level": 2,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master objects and properties and use it in real code.",
+      "objectives": [
+        "Understand the basics of objects and properties",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Objects and Properties is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Objects and Properties matters",
+      "explanation": "This lesson explains the key ideas behind objects and properties and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of objects and properties, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of objects and properties?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use objects and properties",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use objects and properties",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to objects and properties?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is objects and properties useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "The Document Object Model",
+      "description": "Learn the document object model and build stronger JavaScript skills.",
+      "level": 3,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master the document object model and use it in real code.",
+      "objectives": [
+        "Understand the basics of the document object model",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "The Document Object Model is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why The Document Object Model matters",
+      "explanation": "This lesson explains the key ideas behind the document object model and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of the document object model, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of the document object model?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use the document object model",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use the document object model",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to the document object model?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is the document object model useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "DOM Events",
+      "description": "Learn dom events and build stronger JavaScript skills.",
+      "level": 3,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master dom events and use it in real code.",
+      "objectives": [
+        "Understand the basics of dom events",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "DOM Events is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why DOM Events matters",
+      "explanation": "This lesson explains the key ideas behind dom events and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of dom events, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of dom events?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use dom events",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use dom events",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to dom events?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is dom events useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Forms and User Input",
+      "description": "Learn forms and user input and build stronger JavaScript skills.",
+      "level": 3,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master forms and user input and use it in real code.",
+      "objectives": [
+        "Understand the basics of forms and user input",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Forms and User Input is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Forms and User Input matters",
+      "explanation": "This lesson explains the key ideas behind forms and user input and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of forms and user input, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of forms and user input?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use forms and user input",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use forms and user input",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to forms and user input?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is forms and user input useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Strings and Text",
+      "description": "Learn strings and text and build stronger JavaScript skills.",
+      "level": 3,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master strings and text and use it in real code.",
+      "objectives": [
+        "Understand the basics of strings and text",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Strings and Text is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Strings and Text matters",
+      "explanation": "This lesson explains the key ideas behind strings and text and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of strings and text, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of strings and text?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use strings and text",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use strings and text",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to strings and text?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is strings and text useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Numbers and Math",
+      "description": "Learn numbers and math and build stronger JavaScript skills.",
+      "level": 3,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master numbers and math and use it in real code.",
+      "objectives": [
+        "Understand the basics of numbers and math",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Numbers and Math is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Numbers and Math matters",
+      "explanation": "This lesson explains the key ideas behind numbers and math and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of numbers and math, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of numbers and math?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use numbers and math",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use numbers and math",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to numbers and math?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is numbers and math useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Debugging JavaScript",
+      "description": "Learn debugging javascript and build stronger JavaScript skills.",
+      "level": 3,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master debugging javascript and use it in real code.",
+      "objectives": [
+        "Understand the basics of debugging javascript",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Debugging JavaScript is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Debugging JavaScript matters",
+      "explanation": "This lesson explains the key ideas behind debugging javascript and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of debugging javascript, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of debugging javascript?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use debugging javascript",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use debugging javascript",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to debugging javascript?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is debugging javascript useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Error Handling",
+      "description": "Learn error handling and build stronger JavaScript skills.",
+      "level": 4,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master error handling and use it in real code.",
+      "objectives": [
+        "Understand the basics of error handling",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Error Handling is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Error Handling matters",
+      "explanation": "This lesson explains the key ideas behind error handling and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of error handling, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of error handling?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use error handling",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use error handling",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to error handling?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is error handling useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Scope and Hoisting",
+      "description": "Learn scope and hoisting and build stronger JavaScript skills.",
+      "level": 4,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master scope and hoisting and use it in real code.",
+      "objectives": [
+        "Understand the basics of scope and hoisting",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Scope and Hoisting is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Scope and Hoisting matters",
+      "explanation": "This lesson explains the key ideas behind scope and hoisting and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of scope and hoisting, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of scope and hoisting?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use scope and hoisting",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use scope and hoisting",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to scope and hoisting?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is scope and hoisting useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Closures and Callbacks",
+      "description": "Learn closures and callbacks and build stronger JavaScript skills.",
+      "level": 4,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master closures and callbacks and use it in real code.",
+      "objectives": [
+        "Understand the basics of closures and callbacks",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Closures and Callbacks is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Closures and Callbacks matters",
+      "explanation": "This lesson explains the key ideas behind closures and callbacks and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of closures and callbacks, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of closures and callbacks?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use closures and callbacks",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use closures and callbacks",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to closures and callbacks?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is closures and callbacks useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Array Methods",
+      "description": "Learn array methods and build stronger JavaScript skills.",
+      "level": 4,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master array methods and use it in real code.",
+      "objectives": [
+        "Understand the basics of array methods",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Array Methods is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Array Methods matters",
+      "explanation": "This lesson explains the key ideas behind array methods and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of array methods, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of array methods?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use array methods",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use array methods",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to array methods?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is array methods useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Advanced Objects",
+      "description": "Learn advanced objects and build stronger JavaScript skills.",
+      "level": 4,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master advanced objects and use it in real code.",
+      "objectives": [
+        "Understand the basics of advanced objects",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Advanced Objects is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Advanced Objects matters",
+      "explanation": "This lesson explains the key ideas behind advanced objects and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of advanced objects, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of advanced objects?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use advanced objects",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use advanced objects",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to advanced objects?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is advanced objects useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Promises and Async",
+      "description": "Learn promises and async and build stronger JavaScript skills.",
+      "level": 4,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master promises and async and use it in real code.",
+      "objectives": [
+        "Understand the basics of promises and async",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Promises and Async is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Promises and Async matters",
+      "explanation": "This lesson explains the key ideas behind promises and async and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of promises and async, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of promises and async?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use promises and async",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use promises and async",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to promises and async?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is promises and async useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Async / Await",
+      "description": "Learn async / await and build stronger JavaScript skills.",
+      "level": 5,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master async / await and use it in real code.",
+      "objectives": [
+        "Understand the basics of async / await",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Async / Await is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Async / Await matters",
+      "explanation": "This lesson explains the key ideas behind async / await and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of async / await, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of async / await?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use async / await",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use async / await",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to async / await?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is async / await useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Fetch API and APIs",
+      "description": "Learn fetch api and apis and build stronger JavaScript skills.",
+      "level": 5,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master fetch api and apis and use it in real code.",
+      "objectives": [
+        "Understand the basics of fetch api and apis",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Fetch API and APIs is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Fetch API and APIs matters",
+      "explanation": "This lesson explains the key ideas behind fetch api and apis and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of fetch api and apis, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of fetch api and apis?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use fetch api and apis",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use fetch api and apis",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to fetch api and apis?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is fetch api and apis useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "JSON and Data Exchange",
+      "description": "Learn json and data exchange and build stronger JavaScript skills.",
+      "level": 5,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master json and data exchange and use it in real code.",
+      "objectives": [
+        "Understand the basics of json and data exchange",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "JSON and Data Exchange is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why JSON and Data Exchange matters",
+      "explanation": "This lesson explains the key ideas behind json and data exchange and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of json and data exchange, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of json and data exchange?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use json and data exchange",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use json and data exchange",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to json and data exchange?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is json and data exchange useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Local Storage",
+      "description": "Learn local storage and build stronger JavaScript skills.",
+      "level": 5,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master local storage and use it in real code.",
+      "objectives": [
+        "Understand the basics of local storage",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Local Storage is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Local Storage matters",
+      "explanation": "This lesson explains the key ideas behind local storage and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of local storage, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of local storage?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use local storage",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use local storage",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to local storage?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is local storage useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Browser Storage",
+      "description": "Learn browser storage and build stronger JavaScript skills.",
+      "level": 5,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master browser storage and use it in real code.",
+      "objectives": [
+        "Understand the basics of browser storage",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Browser Storage is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Browser Storage matters",
+      "explanation": "This lesson explains the key ideas behind browser storage and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of browser storage, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of browser storage?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use browser storage",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use browser storage",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to browser storage?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is browser storage useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Responsive JavaScript",
+      "description": "Learn responsive javascript and build stronger JavaScript skills.",
+      "level": 5,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master responsive javascript and use it in real code.",
+      "objectives": [
+        "Understand the basics of responsive javascript",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Responsive JavaScript is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Responsive JavaScript matters",
+      "explanation": "This lesson explains the key ideas behind responsive javascript and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of responsive javascript, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of responsive javascript?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use responsive javascript",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use responsive javascript",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to responsive javascript?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is responsive javascript useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Animations and Transitions",
+      "description": "Learn animations and transitions and build stronger JavaScript skills.",
+      "level": 6,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master animations and transitions and use it in real code.",
+      "objectives": [
+        "Understand the basics of animations and transitions",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Animations and Transitions is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Animations and Transitions matters",
+      "explanation": "This lesson explains the key ideas behind animations and transitions and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of animations and transitions, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of animations and transitions?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use animations and transitions",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use animations and transitions",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to animations and transitions?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is animations and transitions useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": "UI Components",
+      "description": "Learn ui components and build stronger JavaScript skills.",
+      "level": 6,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master ui components and use it in real code.",
+      "objectives": [
+        "Understand the basics of ui components",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "UI Components is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why UI Components matters",
+      "explanation": "This lesson explains the key ideas behind ui components and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of ui components, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of ui components?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use ui components",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use ui components",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to ui components?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is ui components useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Testing Basics",
+      "description": "Learn testing basics and build stronger JavaScript skills.",
+      "level": 6,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master testing basics and use it in real code.",
+      "objectives": [
+        "Understand the basics of testing basics",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Testing Basics is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Testing Basics matters",
+      "explanation": "This lesson explains the key ideas behind testing basics and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of testing basics, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of testing basics?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use testing basics",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use testing basics",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to testing basics?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is testing basics useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Performance Optimization",
+      "description": "Learn performance optimization and build stronger JavaScript skills.",
+      "level": 6,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master performance optimization and use it in real code.",
+      "objectives": [
+        "Understand the basics of performance optimization",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Performance Optimization is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Performance Optimization matters",
+      "explanation": "This lesson explains the key ideas behind performance optimization and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of performance optimization, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of performance optimization?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use performance optimization",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use performance optimization",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to performance optimization?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is performance optimization useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Accessibility",
+      "description": "Learn accessibility and build stronger JavaScript skills.",
+      "level": 6,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master accessibility and use it in real code.",
+      "objectives": [
+        "Understand the basics of accessibility",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Accessibility is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Accessibility matters",
+      "explanation": "This lesson explains the key ideas behind accessibility and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of accessibility, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of accessibility?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use accessibility",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use accessibility",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to accessibility?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is accessibility useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Security Basics",
+      "description": "Learn security basics and build stronger JavaScript skills.",
+      "level": 6,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master security basics and use it in real code.",
+      "objectives": [
+        "Understand the basics of security basics",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Security Basics is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Security Basics matters",
+      "explanation": "This lesson explains the key ideas behind security basics and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of security basics, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of security basics?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use security basics",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use security basics",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to security basics?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is security basics useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Version Control with Git",
+      "description": "Learn version control with git and build stronger JavaScript skills.",
+      "level": 7,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master version control with git and use it in real code.",
+      "objectives": [
+        "Understand the basics of version control with git",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Version Control with Git is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Version Control with Git matters",
+      "explanation": "This lesson explains the key ideas behind version control with git and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of version control with git, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of version control with git?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use version control with git",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use version control with git",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to version control with git?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is version control with git useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Package Managers",
+      "description": "Learn package managers and build stronger JavaScript skills.",
+      "level": 7,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master package managers and use it in real code.",
+      "objectives": [
+        "Understand the basics of package managers",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Package Managers is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Package Managers matters",
+      "explanation": "This lesson explains the key ideas behind package managers and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of package managers, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of package managers?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use package managers",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use package managers",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to package managers?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is package managers useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Modern JavaScript (ES6+)",
+      "description": "Learn modern javascript (es6+) and build stronger JavaScript skills.",
+      "level": 7,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master modern javascript (es6+) and use it in real code.",
+      "objectives": [
+        "Understand the basics of modern javascript (es6+)",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Modern JavaScript (ES6+) is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Modern JavaScript (ES6+) matters",
+      "explanation": "This lesson explains the key ideas behind modern javascript (es6+) and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of modern javascript (es6+), and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of modern javascript (es6+)?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use modern javascript (es6+)",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use modern javascript (es6+)",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to modern javascript (es6+)?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is modern javascript (es6+) useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Modules and Imports",
+      "description": "Learn modules and imports and build stronger JavaScript skills.",
+      "level": 7,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master modules and imports and use it in real code.",
+      "objectives": [
+        "Understand the basics of modules and imports",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Modules and Imports is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Modules and Imports matters",
+      "explanation": "This lesson explains the key ideas behind modules and imports and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of modules and imports, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of modules and imports?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use modules and imports",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use modules and imports",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to modules and imports?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is modules and imports useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Build Tools",
+      "description": "Learn build tools and build stronger JavaScript skills.",
+      "level": 7,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master build tools and use it in real code.",
+      "objectives": [
+        "Understand the basics of build tools",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Build Tools is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Build Tools matters",
+      "explanation": "This lesson explains the key ideas behind build tools and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of build tools, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of build tools?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use build tools",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use build tools",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to build tools?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is build tools useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": "React Introduction",
+      "description": "Learn react introduction and build stronger JavaScript skills.",
+      "level": 7,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master react introduction and use it in real code.",
+      "objectives": [
+        "Understand the basics of react introduction",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "React Introduction is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why React Introduction matters",
+      "explanation": "This lesson explains the key ideas behind react introduction and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of react introduction, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of react introduction?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use react introduction",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use react introduction",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to react introduction?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is react introduction useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "title": "JSX and Templates",
+      "description": "Learn jsx and templates and build stronger JavaScript skills.",
+      "level": 8,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master jsx and templates and use it in real code.",
+      "objectives": [
+        "Understand the basics of jsx and templates",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "JSX and Templates is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why JSX and Templates matters",
+      "explanation": "This lesson explains the key ideas behind jsx and templates and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of jsx and templates, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of jsx and templates?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use jsx and templates",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use jsx and templates",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to jsx and templates?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is jsx and templates useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "title": "React Components",
+      "description": "Learn react components and build stronger JavaScript skills.",
+      "level": 8,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master react components and use it in real code.",
+      "objectives": [
+        "Understand the basics of react components",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "React Components is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why React Components matters",
+      "explanation": "This lesson explains the key ideas behind react components and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of react components, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of react components?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use react components",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use react components",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to react components?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is react components useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "title": "State and Props",
+      "description": "Learn state and props and build stronger JavaScript skills.",
+      "level": 8,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master state and props and use it in real code.",
+      "objectives": [
+        "Understand the basics of state and props",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "State and Props is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why State and Props matters",
+      "explanation": "This lesson explains the key ideas behind state and props and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of state and props, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of state and props?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use state and props",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use state and props",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to state and props?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is state and props useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "title": "React Hooks",
+      "description": "Learn react hooks and build stronger JavaScript skills.",
+      "level": 8,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master react hooks and use it in real code.",
+      "objectives": [
+        "Understand the basics of react hooks",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "React Hooks is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why React Hooks matters",
+      "explanation": "This lesson explains the key ideas behind react hooks and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of react hooks, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of react hooks?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use react hooks",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use react hooks",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to react hooks?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is react hooks useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "title": "React Routing",
+      "description": "Learn react routing and build stronger JavaScript skills.",
+      "level": 8,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master react routing and use it in real code.",
+      "objectives": [
+        "Understand the basics of react routing",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "React Routing is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why React Routing matters",
+      "explanation": "This lesson explains the key ideas behind react routing and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of react routing, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of react routing?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use react routing",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use react routing",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to react routing?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is react routing useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Final Project",
+      "description": "Learn final project and build stronger JavaScript skills.",
+      "level": 8,
+      "xp": 60,
+      "coins": 25,
+      "duration": "15",
+      "mission": "Master final project and use it in real code.",
+      "objectives": [
+        "Understand the basics of final project",
+        "See how it works in a code example",
+        "Apply it with a short practice task"
+      ],
+      "story": "Final Project is an important part of modern JavaScript and helps you build richer web applications.",
+      "storyTitle": "Why Final Project matters",
+      "explanation": "This lesson explains the key ideas behind final project and how it helps you build interactive applications.",
+      "summary": "You learned the fundamentals of final project, and you can now use it in your projects.",
+      "quiz": [
+        {
+          "question": "What is the main use of final project?",
+          "options": [
+            "To build visual layouts",
+            "To understand and use final project",
+            "To create static images",
+            "To write database queries"
+          ],
+          "correct": "To understand and use final project",
+          "xp": 10
+        },
+        {
+          "question": "Which area is most closely related to final project?",
+          "options": [
+            "Cooking recipes",
+            "Building interactive web pages",
+            "Managing hardware drivers",
+            "Printing documents"
+          ],
+          "correct": "Building interactive web pages",
+          "xp": 10
+        },
+        {
+          "question": "Why is final project useful?",
+          "options": [
+            "It makes code harder to read",
+            "It helps write cleaner and more powerful web applications",
+            "It is only used for styling",
+            "It slows down the browser"
+          ],
+          "correct": "It helps write cleaner and more powerful web applications",
+          "xp": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1695 @@
+{
+  "quizzes": {
+    "0": [
+      {
+        "question": "What is programming?",
+        "options": [
+          "Playing video games",
+          "Writing instructions for a computer",
+          "Using social media",
+          "Watching videos"
+        ],
+        "correct": "Writing instructions for a computer",
+        "xp": 10
+      },
+      {
+        "question": "What does console.log do?",
+        "options": [
+          "Prints a message to the console",
+          "Deletes a message",
+          "Creates a new file",
+          "Plays a sound"
+        ],
+        "correct": "Prints a message to the console",
+        "xp": 10
+      },
+      {
+        "question": "What is a comment in code?",
+        "options": [
+          "Text that runs on the computer",
+          "Text that computers ignore",
+          "A type of error",
+          "A programming language"
+        ],
+        "correct": "Text that computers ignore",
+        "xp": 10
+      }
+    ],
+    "1": [
+      {
+        "question": "What is JavaScript used for?",
+        "options": [
+          "Styling web pages",
+          "Creating interactive web applications",
+          "Writing documents",
+          "Drawing pictures"
+        ],
+        "correct": "Creating interactive web applications",
+        "xp": 10
+      },
+      {
+        "question": "Where does JavaScript typically run?",
+        "options": [
+          "In a web browser",
+          "On a calculator",
+          "In a microwave",
+          "On a typewriter"
+        ],
+        "correct": "In a web browser",
+        "xp": 10
+      },
+      {
+        "question": "What is a variable in JavaScript?",
+        "options": [
+          "A type of error",
+          "A container for storing data",
+          "A way to comment code",
+          "A style sheet"
+        ],
+        "correct": "A container for storing data",
+        "xp": 10
+      }
+    ],
+    "2": [
+      {
+        "question": "What is a variable?",
+        "options": [
+          "A type of error",
+          "A container for storing data",
+          "A programming language",
+          "A web browser"
+        ],
+        "correct": "A container for storing data",
+        "xp": 10
+      },
+      {
+        "question": "Which is a valid variable name in JavaScript?",
+        "options": [
+          "2ndPlace",
+          "my-variable",
+          "myVariable",
+          "var"
+        ],
+        "correct": "myVariable",
+        "xp": 10
+      },
+      {
+        "question": "What does this code do?\nlet x = 5;\nx = x + 3;",
+        "options": [
+          "Adds 3 to x, making it 8",
+          "Makes x equal to 3",
+          "Causes an error",
+          "Does nothing"
+        ],
+        "correct": "Adds 3 to x, making it 8",
+        "xp": 10
+      }
+    ],
+    "3": [
+      {
+        "question": "What type of data is 'Hello World'?",
+        "options": [
+          "Number",
+          "String",
+          "Boolean",
+          "Array"
+        ],
+        "correct": "String",
+        "xp": 10
+      },
+      {
+        "question": "What type of data is true or false?",
+        "options": [
+          "Number",
+          "String",
+          "Boolean",
+          "Array"
+        ],
+        "correct": "Boolean",
+        "xp": 10
+      },
+      {
+        "question": "What is an Array used for?",
+        "options": [
+          "Storing a single number",
+          "Storing a list of items",
+          "Storing true/false values",
+          "Storing text only"
+        ],
+        "correct": "Storing a list of items",
+        "xp": 10
+      }
+    ],
+    "4": [
+      {
+        "question": "What does 10 + 5 equal?",
+        "options": [
+          "5",
+          "10",
+          "15",
+          "50"
+        ],
+        "correct": "15",
+        "xp": 10
+      },
+      {
+        "question": "What does 10 % 3 equal?",
+        "options": [
+          "3",
+          "1",
+          "0",
+          "7"
+        ],
+        "correct": "1",
+        "xp": 10
+      },
+      {
+        "question": "What is the result of 5 > 3?",
+        "options": [
+          "true",
+          "false",
+          "5",
+          "3"
+        ],
+        "correct": "true",
+        "xp": 10
+      },
+      {
+        "question": "What does true && false equal?",
+        "options": [
+          "true",
+          "false",
+          "maybe",
+          "error"
+        ],
+        "correct": "false",
+        "xp": 10
+      }
+    ],
+    "5": [
+      {
+        "question": "What is one key idea from data types and values?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about data types and values?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about data types and values?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "6": [
+      {
+        "question": "What is one key idea from operators and expressions?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about operators and expressions?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about operators and expressions?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "7": [
+      {
+        "question": "What is one key idea from control flow?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about control flow?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about control flow?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "8": [
+      {
+        "question": "What is one key idea from loops and iteration?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about loops and iteration?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about loops and iteration?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "9": [
+      {
+        "question": "What is one key idea from functions and reusability?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about functions and reusability?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about functions and reusability?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "10": [
+      {
+        "question": "What is one key idea from arrays and lists?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about arrays and lists?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about arrays and lists?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "11": [
+      {
+        "question": "What is one key idea from objects and properties?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about objects and properties?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about objects and properties?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "12": [
+      {
+        "question": "What is one key idea from the document object model?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about the document object model?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about the document object model?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "13": [
+      {
+        "question": "What is one key idea from dom events?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about dom events?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about dom events?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "14": [
+      {
+        "question": "What is one key idea from forms and user input?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about forms and user input?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about forms and user input?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "15": [
+      {
+        "question": "What is one key idea from strings and text?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about strings and text?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about strings and text?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "16": [
+      {
+        "question": "What is one key idea from numbers and math?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about numbers and math?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about numbers and math?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "17": [
+      {
+        "question": "What is one key idea from debugging javascript?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about debugging javascript?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about debugging javascript?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "18": [
+      {
+        "question": "What is one key idea from error handling?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about error handling?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about error handling?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "19": [
+      {
+        "question": "What is one key idea from scope and hoisting?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about scope and hoisting?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about scope and hoisting?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "20": [
+      {
+        "question": "What is one key idea from closures and callbacks?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about closures and callbacks?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about closures and callbacks?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "21": [
+      {
+        "question": "What is one key idea from array methods?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about array methods?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about array methods?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "22": [
+      {
+        "question": "What is one key idea from advanced objects?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about advanced objects?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about advanced objects?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "23": [
+      {
+        "question": "What is one key idea from promises and async?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about promises and async?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about promises and async?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "24": [
+      {
+        "question": "What is one key idea from async / await?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about async / await?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about async / await?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "25": [
+      {
+        "question": "What is one key idea from fetch api and apis?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about fetch api and apis?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about fetch api and apis?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "26": [
+      {
+        "question": "What is one key idea from json and data exchange?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about json and data exchange?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about json and data exchange?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "27": [
+      {
+        "question": "What is one key idea from local storage?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about local storage?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about local storage?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "28": [
+      {
+        "question": "What is one key idea from browser storage?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about browser storage?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about browser storage?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "29": [
+      {
+        "question": "What is one key idea from responsive javascript?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about responsive javascript?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about responsive javascript?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "30": [
+      {
+        "question": "What is one key idea from animations and transitions?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about animations and transitions?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about animations and transitions?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "31": [
+      {
+        "question": "What is one key idea from ui components?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about ui components?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about ui components?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "32": [
+      {
+        "question": "What is one key idea from testing basics?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about testing basics?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about testing basics?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "33": [
+      {
+        "question": "What is one key idea from performance optimization?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about performance optimization?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about performance optimization?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "34": [
+      {
+        "question": "What is one key idea from accessibility?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about accessibility?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about accessibility?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "35": [
+      {
+        "question": "What is one key idea from security basics?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about security basics?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about security basics?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "36": [
+      {
+        "question": "What is one key idea from version control with git?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about version control with git?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about version control with git?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "37": [
+      {
+        "question": "What is one key idea from package managers?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about package managers?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about package managers?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "38": [
+      {
+        "question": "What is one key idea from modern javascript (es6+)?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about modern javascript (es6+)?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about modern javascript (es6+)?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "39": [
+      {
+        "question": "What is one key idea from modules and imports?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about modules and imports?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about modules and imports?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "40": [
+      {
+        "question": "What is one key idea from build tools?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about build tools?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about build tools?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "41": [
+      {
+        "question": "What is one key idea from react introduction?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about react introduction?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about react introduction?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "42": [
+      {
+        "question": "What is one key idea from jsx and templates?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about jsx and templates?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about jsx and templates?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "43": [
+      {
+        "question": "What is one key idea from react components?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about react components?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about react components?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "44": [
+      {
+        "question": "What is one key idea from state and props?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about state and props?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about state and props?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "45": [
+      {
+        "question": "What is one key idea from react hooks?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about react hooks?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about react hooks?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "46": [
+      {
+        "question": "What is one key idea from react routing?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about react routing?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about react routing?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ],
+    "47": [
+      {
+        "question": "What is one key idea from final project?",
+        "options": [
+          "It is only used for design",
+          "It helps build interactive JavaScript applications",
+          "It is a graphic format",
+          "It only works offline"
+        ],
+        "correct": "It helps build interactive JavaScript applications",
+        "xp": 10
+      },
+      {
+        "question": "Which of these is true about final project?",
+        "options": [
+          "It makes pages static",
+          "It helps you learn JavaScript concepts",
+          "It is unrelated to coding",
+          "It only runs on servers"
+        ],
+        "correct": "It helps you learn JavaScript concepts",
+        "xp": 10
+      },
+      {
+        "question": "In JavaScript, why do developers care about final project?",
+        "options": [
+          "To create interactive experiences",
+          "To format plain text",
+          "To build hardware devices",
+          "To avoid learning programming"
+        ],
+        "correct": "To create interactive experiences",
+        "xp": 10
+      }
+    ]
+  }
+}

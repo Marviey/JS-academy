@@ -1,0 +1,72 @@
+{
+  "games": [
+    {
+      "id": "game-1",
+      "title": "Code Runner",
+      "description": "Complete the coding challenge by writing the correct function.",
+      "difficulty": "Easy",
+      "xp": 30,
+      "coins": 15,
+      "status": "Ready",
+      "challenge": {
+        "title": "Sum Up to N",
+        "difficulty": "Easy",
+        "description": "Write a function named sumUpTo(n) that returns the sum of all integers from 1 through n.",
+        "template": "function sumUpTo(n) {\n  // Your code here\n}\n\nconsole.log(sumUpTo(10));",
+        "expectedOutput": "55",
+        "hint": "Use a loop or the formula n * (n + 1) / 2."
+      }
+    },
+    {
+      "id": "game-2",
+      "title": "Bug Hunter",
+      "description": "Find and fix the broken JavaScript code to complete the task.",
+      "difficulty": "Medium",
+      "xp": 45,
+      "coins": 20,
+      "status": "Ready",
+      "challenge": {
+        "title": "Find the Largest Number",
+        "difficulty": "Medium",
+        "description": "Fix the code so it prints the largest number from the array.",
+        "template": "const numbers = [4, 8, 15, 16, 23, 42];\n\nfunction getMax(arr) {\n  // There is a bug here\n  return Math.min(...arr);\n}\n\nconsole.log(getMax(numbers));",
+        "expectedOutput": "42",
+        "hint": "Use Math.max instead of Math.min."
+      }
+    },
+    {
+      "id": "game-3",
+      "title": "Array Dash",
+      "description": "Race through array logic and return the correct result.",
+      "difficulty": "Medium",
+      "xp": 50,
+      "coins": 25,
+      "status": "Ready",
+      "challenge": {
+        "title": "Sort and Filter",
+        "difficulty": "Medium",
+        "description": "Write a function filterAndSort(numbers) that returns only the even numbers sorted ascending.",
+        "template": "const numbers = [7, 2, 9, 4, 1, 8, 3];\n\nfunction filterAndSort(arr) {\n  // Your code here\n}\n\nconsole.log(filterAndSort(numbers));",
+        "expectedOutput": "[2, 4, 8]",
+        "hint": "Use filter() to keep even numbers, then sort() to order them."
+      }
+    },
+    {
+      "id": "game-4",
+      "title": "String Sprint",
+      "description": "Speed through string puzzles and level up your skills.",
+      "difficulty": "Easy",
+      "xp": 25,
+      "coins": 10,
+      "status": "Ready",
+      "challenge": {
+        "title": "Reverse the Words",
+        "difficulty": "Easy",
+        "description": "Create a function reverseWords(text) that reverses the word order in a sentence.",
+        "template": "function reverseWords(text) {\n  // Your code here\n}\n\nconsole.log(reverseWords('learn code fast'));",
+        "expectedOutput": "fast code learn",
+        "hint": "Split the text into words, reverse the array, then join it again."
+      }
+    }
+  ]
+}

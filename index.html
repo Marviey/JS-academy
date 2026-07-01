@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#6C63FF">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>JavaScript Academy</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/icon-512.png">
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="css/playground.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/games.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="app">
+        <div id="login-screen" class="login-screen">
+            <div class="login-card">
+                <h1>Welcome to JavaScript Academy</h1>
+                <p>Sign in to continue your coding journey.</p>
+                <form id="login-form" class="login-form">
+                    <input id="login-name" type="text" placeholder="Your name" value="Student" required>
+                    <input id="login-email" type="email" placeholder="Email" value="student@jsacademy.dev">
+                    <div class="login-actions">
+                        <button class="btn btn-primary" type="submit">Enter Academy</button>
+                        <button class="btn btn-secondary" type="button" id="guest-login-btn">Guest</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav" class="main-nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-header">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="#6C63FF"/>
+                        <path d="M10 10L22 10" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M10 16L22 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M10 22L18 22" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                    <span>JS Academy</span>
+                </div>
+            </div>
+            <ul class="nav-links" role="menubar">
+                <li role="none">
+                    <a href="#dashboard" role="menuitem" class="active" data-page="dashboard">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2 10L10 2L18 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 8V16H16V8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#lessons" role="menuitem" data-page="lessons">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M3 5L10 2L17 5L10 8L3 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 10L10 13L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 15L10 18L17 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Lessons</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#playground" role="menuitem" data-page="playground">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M13 4L17 10L13 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 4L3 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Playground</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#quiz" role="menuitem" data-page="quiz">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 5H16M4 9H12M4 13H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 4H16V16H4V4Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>Quiz</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#games" role="menuitem" data-page="games">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6 7H6.01M14 7H14.01M10 11V14M10 11L12 9M10 11L8 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="2" y="4" width="16" height="12" rx="3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>Games</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#projects" role="menuitem" data-page="projects">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2 4H18V16H2V4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12H11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#profile" role="menuitem" data-page="profile">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 18C2 14 5.5 12 10 12C14.5 12 18 14 18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#settings" role="menuitem" data-page="settings">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 2V4M10 16V18M4 10H2M18 10H16M4.93 4.93L6.34 6.34M13.66 13.66L15.07 15.07M15.07 4.93L13.66 6.34M6.34 13.66L4.93 15.07" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="main-content" role="main">
+            <!-- Pages -->
+            <div id="page-dashboard" class="page active" role="tabpanel"></div>
+            <div id="page-lessons" class="page" role="tabpanel"></div>
+            <div id="page-playground" class="page" role="tabpanel"></div>
+            <div id="page-quiz" class="page" role="tabpanel"></div>
+            <div id="page-games" class="page" role="tabpanel"></div>
+            <div id="page-projects" class="page" role="tabpanel"></div>
+            <div id="page-profile" class="page" role="tabpanel"></div>
+            <div id="page-settings" class="page" role="tabpanel"></div>
+        </main>
+
+        <!-- Toast Container -->
+        <div id="toast-container" class="toast-container" role="status" aria-live="polite"></div>
+
+        <!-- Modal Container -->
+        <div id="modal-container" class="modal-container" role="dialog" aria-modal="true"></div>
+    </div>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(reg => console.log('Service Worker registered:', reg))
+                    .catch(err => console.log('Service Worker registration failed:', err));
+            });
+        }
+    </script>
+
+    <!-- Application Scripts -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
