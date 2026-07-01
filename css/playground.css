@@ -182,8 +182,42 @@
     font-size: var(--font-size-sm);
     line-height: 1.8;
     color: var(--text-primary);
-    min-height: 200px;
-    max-height: 400px;
+    min-height: 240px;
+    max-height: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.playground-output .output-body .preview-shell {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.playground-output .output-body .preview-label {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.playground-output .output-body .preview-frame {
+    width: 100%;
+    min-height: 240px;
+    border: none;
+    background: white;
+}
+
+.playground-output .output-body .output-stream {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
 }
 
 .playground-output .output-body .output-line {

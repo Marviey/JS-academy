@@ -10,10 +10,40 @@ let store;
 let router;
 let editor;
 let output;
+let previewFrame;
+let currentTab = 'javascript';
+let editorCodeByTab = {};
 let consoleOutput = [];
 let isFullscreen = false;
 let codeHistory = [];
 let historyIndex = -1;
+
+const defaultTemplates = {
+    javascript: `// Welcome to JavaScript Academy!
+// Write your code here and click Run!
+
+console.log('Hello, World!');
+
+// Try changing the code and see what happens!`,
+    html: `<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Hello from the Playground</h1>
+    <p>This is your live HTML preview.</p>
+  </body>
+</html>`,
+    css: `/* CSS Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}`
+};
 
 /**
  * Initialize the playground
@@ -130,13 +160,19 @@ console.log('Hello, World!');
                         </div>
                     </div>
                     <div class="output-body" id="output-body">
-                        <div class="output-line output-info">
-                            <span class="output-arrow">▸</span>
-                            <span>JavaScript Academy Playground</span>
+                        <div class="preview-shell" id="preview-shell" style="display: none;">
+                            <div class="preview-label">🌐 Live Preview</div>
+                            <iframe id="preview-frame" class="preview-frame" title="HTML Preview"></iframe>
                         </div>
-                        <div class="output-line output-info">
-                            <span class="output-arrow">▸</span>
-                            <span>Write your code and click "Run" to execute</span>
+                        <div class="output-stream" id="output-stream">
+                            <div class="output-line output-info">
+                                <span class="output-arrow">▸</span>
+                                <span>JavaScript Academy Playground</span>
+                            </div>
+                            <div class="output-line output-info">
+                                <span class="output-arrow">▸</span>
+                                <span>Write your code and click "Run" to execute</span>
+                            </div>
                         </div>
                         <div class="expected-output" id="expected-output" style="display: none;">
                             <div class="expected-label">🎯 Expected Output</div>
@@ -152,16 +188,24 @@ console.log('Hello, World!');
 
     // Store references
     editor = document.getElementById('code-editor');
-    output = document.getElementById('output-body');
+    output = document.getElementById('output-stream');
+    previewFrame = document.getElementById('preview-frame');
+
+    // Load saved code from storage
+    const savedTab = store.get('playgroundTab') || 'javascript';
+    currentTab = savedTab;
+
+    editorCodeByTab = {
+        javascript: store.get('playgroundCode:javascript') || defaultTemplates.javascript,
+        html: store.get('playgroundCode:html') || defaultTemplates.html,
+        css: store.get('playgroundCode:css') || defaultTemplates.css
+    };
+
+    editor.value = editorCodeByTab[currentTab] || defaultTemplates[currentTab] || '';
 
     // Set initial line numbers
     updateLineNumbers();
-
-    // Load saved code from storage
-    const savedCode = store.get('playgroundCode');
-    if (savedCode) {
-        editor.value = savedCode;
-    }
+    updateTabState();
 
     // Show expected output
     const expectedBtn = document.getElementById('expected-output-btn');
@@ -208,8 +252,7 @@ function setupPlaygroundEvents(container) {
         // Auto-update line numbers
         editor.addEventListener('input', debounce(() => {
             updateLineNumbers();
-            // Auto-save code
-            store.set('playgroundCode', editor.value);
+            saveCurrentCode();
         }, 300));
 
         // Tab support
@@ -229,16 +272,11 @@ function setupPlaygroundEvents(container) {
     const resetBtn = document.getElementById('reset-code-btn');
     if (resetBtn) {
         resetBtn.addEventListener('click', () => {
-            const defaultCode = `// Welcome to JavaScript Academy!
-// Write your code here and click Run!
-
-console.log('Hello, World!');
-
-// Try changing the code and see what happens!`;
+            const defaultCode = defaultTemplates[currentTab] || '';
             editor.value = defaultCode;
+            saveCurrentCode();
             clearOutput();
             updateLineNumbers();
-            store.set('playgroundCode', defaultCode);
             showToast('🔄 Code reset to default', 'info');
         });
     }
@@ -286,8 +324,6 @@ console.log('Hello, World!');
     const tabs = container.querySelectorAll('.playground-tabs button');
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
-            tabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
             const tabType = tab.dataset.tab;
             switchTab(tabType);
         });
@@ -313,58 +349,55 @@ console.log('Hello, World!');
  * Run the code in the editor
  */
 function runCode() {
-    const code = editor.value;
+    const code = editor?.value;
     if (!code || code.trim() === '') {
         addOutput('💡 No code to run. Write some code first!', 'info');
         return;
     }
 
+    saveCurrentCode();
     clearOutput();
     consoleOutput = [];
 
+    if (currentTab === 'html') {
+        renderHtmlPreview(code);
+        updateStatus('Preview');
+        return;
+    }
+
+    if (currentTab === 'css') {
+        const previewMarkup = `<style>${code}</style><div class="preview-card"><h1>CSS Preview</h1><p>Your styles are applied here.</p></div>`;
+        renderHtmlPreview(previewMarkup);
+        updateStatus('Preview');
+        return;
+    }
+
+    const originalLog = console.log;
+    const originalError = console.error;
+    const originalWarn = console.warn;
+    const originalInfo = console.info;
+
     try {
-        // Capture console.log output
         const logs = [];
-        const originalLog = console.log;
-        const originalError = console.error;
-        const originalWarn = console.warn;
-        const originalInfo = console.info;
-
-        console.log = (...args) => {
-            logs.push({ type: 'log', args });
-            originalLog(...args);
-        };
-        console.error = (...args) => {
-            logs.push({ type: 'error', args });
-            originalError(...args);
-        };
-        console.warn = (...args) => {
-            logs.push({ type: 'warn', args });
-            originalWarn(...args);
-        };
-        console.info = (...args) => {
-            logs.push({ type: 'info', args });
-            originalInfo(...args);
+        const capture = (method, type) => (...args) => {
+            logs.push({ type, args });
+            method(...args);
         };
 
-        // Execute the code
+        console.log = capture(originalLog, 'log');
+        console.error = capture(originalError, 'error');
+        console.warn = capture(originalWarn, 'warn');
+        console.info = capture(originalInfo, 'info');
+
         const result = eval(code);
 
-        // Restore console
-        console.log = originalLog;
-        console.error = originalError;
-        console.warn = originalWarn;
-        console.info = originalInfo;
-
-        // Display logs
         if (logs.length === 0 && result !== undefined) {
-            // If no console.log but there's a result, show it
             addOutput(formatValue(result), 'value');
         } else {
             logs.forEach(log => {
                 const formatted = log.args.map(arg => formatValue(arg)).join(' ');
-                const type = log.type === 'error' ? 'error' : 
-                             log.type === 'warn' ? 'warning' : 
+                const type = log.type === 'error' ? 'error' :
+                             log.type === 'warn' ? 'warning' :
                              log.type === 'info' ? 'info' : 'success';
                 addOutput(formatted, type);
             });
@@ -375,18 +408,17 @@ function runCode() {
         }
 
         updateStatus('Success');
-
     } catch (error) {
-        // Restore console
+        addOutput(`❌ Error: ${error.message}`, 'error');
+        updateStatus('Error');
+    } finally {
         console.log = originalLog;
         console.error = originalError;
         console.warn = originalWarn;
         console.info = originalInfo;
-
-        addOutput(`❌ Error: ${error.message}`, 'error');
-        updateStatus('Error');
     }
 }
+
 
 /**
  * Format a value for display
@@ -452,25 +484,14 @@ function addOutput(message, type = 'info') {
  */
 function clearOutput() {
     if (!output) return;
-    
-    // Keep only the info lines
-    const infoLines = output.querySelectorAll('.output-line.output-info');
+
     output.innerHTML = '';
-    
-    if (infoLines.length === 0) {
-        addOutput('🔄 Output cleared. Run your code again!', 'info');
-    } else {
-        infoLines.forEach(line => {
-            output.appendChild(line.cloneNode(true));
-        });
-    }
-    
-    // Hide expected output
+
     const expected = document.getElementById('expected-output');
     if (expected) {
         expected.style.display = 'none';
     }
-    
+
     updateStatus('Ready');
 }
 
@@ -635,74 +656,61 @@ function toggleFullscreen() {
  * Switch between tabs
  */
 function switchTab(tabType) {
-    const examples = {
-        javascript: `// JavaScript Example
-console.log('Hello, World!');
+    if (!editor || !defaultTemplates[tabType]) return;
 
-// Try changing this code
-const name = 'Student';
-console.log('Welcome, ' + name + '!');
-
-// Arrays and Objects
-const colors = ['red', 'green', 'blue'];
-console.log('Colors:', colors);
-
-// Functions
-function greet(person) {
-    return 'Hello, ' + person + '!';
+    saveCurrentCode();
+    currentTab = tabType;
+    editor.value = editorCodeByTab[tabType] || defaultTemplates[tabType];
+    updateLineNumbers();
+    store.set('playgroundTab', currentTab);
+    updateTabState();
+    clearOutput();
+    showToast(`📝 Switched to ${tabType.toUpperCase()}`, 'info');
 }
-console.log(greet('Friend'));`,
-        
-        html: `<!DOCTYPE html>
+
+function updateTabState() {
+    const tabs = document.querySelectorAll('.playground-tabs button');
+    tabs.forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.tab === currentTab);
+    });
+}
+
+function saveCurrentCode() {
+    if (!editor) return;
+    editorCodeByTab[currentTab] = editor.value;
+    store?.set(`playgroundCode:${currentTab}`, editor.value);
+    store?.set('playgroundCode', editor.value);
+}
+
+function renderHtmlPreview(code) {
+    if (!previewFrame) return;
+
+    const previewDoc = `<!DOCTYPE html>
 <html>
-<head>
-    <title>My Page</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>This is HTML</p>
-    <button onclick="alert('Clicked!')">Click Me</button>
-</body>
-</html>`,
-        
-        css: `/* CSS Styles */
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 1rem;
+        font-family: Inter, Arial, sans-serif;
+        background: #fff;
+        color: #111827;
+      }
+      .preview-card {
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+  </head>
+  <body>${code}</body>
+</html>`;
 
-h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-button {
-    padding: 12px 24px;
-    background: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-button:hover {
-    transform: scale(1.05);
-}`
-    };
-
-    if (editor && examples[tabType]) {
-        editor.value = examples[tabType];
-        updateLineNumbers();
-        store.set('playgroundCode', editor.value);
-        clearOutput();
-        showToast(`📝 Switched to ${tabType.toUpperCase()}`, 'info');
+    previewFrame.srcdoc = previewDoc;
+    const shell = document.getElementById('preview-shell');
+    if (shell) {
+        shell.style.display = 'block';
     }
 }
 

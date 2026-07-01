@@ -3,18 +3,18 @@
  * Entry point for the educational PWA
  */
 
-import { Router } from './router.js';
-import { Store } from './store.js';
-import { Theme } from './theme.js';
-import { Navigation } from './navigation.js';
-import { initializeDashboard } from './pages/dashboard.js';
-import { initializeLessons } from './pages/lessons.js';
-import { initializePlayground } from './pages/playground.js';
-import { initializeQuiz } from './pages/quiz.js';
-import { initializeGames } from './pages/games.js';
-import { initializeProjects } from './pages/projects.js';
-import { initializeProfile } from './pages/profile.js';
-import { initializeSettings } from './pages/settings.js';
+import { Router } from './router.js?v=20260701';
+import { Store } from './store.js?v=20260701';
+import { Theme } from './theme.js?v=20260701';
+import { Navigation } from './navigation.js?v=20260701';
+import { initializeDashboard } from './pages/dashboard.js?v=20260701';
+import { initializeLessons } from './pages/lessons.js?v=20260701';
+import { initializePlayground } from './pages/playground.js?v=20260701';
+import { initializeQuiz } from './pages/quiz.js?v=20260701';
+import { initializeGames } from './pages/games.js?v=20260701';
+import { initializeProjects } from './pages/projects.js?v=20260701';
+import { initializeProfile } from './pages/profile.js?v=20260701';
+import { initializeSettings } from './pages/settings.js?v=20260701';
 
 class App {
     constructor() {
