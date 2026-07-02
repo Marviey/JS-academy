@@ -3,18 +3,18 @@
  * Entry point for the educational PWA
  */
 
-import { Router } from './router.js?v=20260701';
-import { Store } from './store.js?v=20260701';
-import { Theme } from './theme.js?v=20260701';
-import { Navigation } from './navigation.js?v=20260701';
-import { initializeDashboard } from './pages/dashboard.js?v=20260701';
-import { initializeLessons } from './pages/lessons.js?v=20260701';
-import { initializePlayground } from './pages/playground.js?v=20260701';
-import { initializeQuiz } from './pages/quiz.js?v=20260701';
-import { initializeGames } from './pages/games.js?v=20260701';
-import { initializeProjects } from './pages/projects.js?v=20260701';
-import { initializeProfile } from './pages/profile.js?v=20260701';
-import { initializeSettings } from './pages/settings.js?v=20260701';
+import { Router } from './router.js?v=20260702';
+import { Store } from './store.js?v=20260702';
+import { Theme } from './theme.js?v=20260702';
+import { Navigation } from './navigation.js?v=20260702';
+import { initializeDashboard } from './pages/dashboard.js?v=20260702';
+import { initializeLessons } from './pages/lessons.js?v=20260702';
+import { initializePlayground } from './pages/playground.js?v=20260702';
+import { initializeQuiz } from './pages/quiz.js?v=20260702';
+import { initializeGames } from './pages/games.js?v=20260702';
+import { initializeProjects } from './pages/projects.js?v=20260702';
+import { initializeProfile } from './pages/profile.js?v=20260702';
+import { initializeSettings } from './pages/settings.js?v=20260702';
 
 class App {
     constructor() {
@@ -339,11 +339,8 @@ class App {
 
 // Initialize the application when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    const app = new App();
-    app.init();
-
-    // Expose app to global scope for debugging
-    window.__app = app;
+    window.__app = new App();
+    window.__app.init();
 });
 
 // Handle service worker updates

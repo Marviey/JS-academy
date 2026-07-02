@@ -206,6 +206,7 @@ console.log('Hello, World!');
     // Set initial line numbers
     updateLineNumbers();
     updateTabState();
+    renderLivePreview();
 
     // Show expected output
     const expectedBtn = document.getElementById('expected-output-btn');
@@ -249,10 +250,11 @@ function setupPlaygroundEvents(container) {
             }
         });
 
-        // Auto-update line numbers
+        // Auto-update line numbers and preview
         editor.addEventListener('input', debounce(() => {
             updateLineNumbers();
             saveCurrentCode();
+            renderLivePreview();
         }, 300));
 
         // Tab support
@@ -359,64 +361,57 @@ function runCode() {
     clearOutput();
     consoleOutput = [];
 
-    if (currentTab === 'html') {
-        renderHtmlPreview(code);
-        updateStatus('Preview');
-        return;
-    }
+    if (currentTab === 'javascript') {
+        const originalLog = console.log;
+        const originalError = console.error;
+        const originalWarn = console.warn;
+        const originalInfo = console.info;
 
-    if (currentTab === 'css') {
-        const previewMarkup = `<style>${code}</style><div class="preview-card"><h1>CSS Preview</h1><p>Your styles are applied here.</p></div>`;
-        renderHtmlPreview(previewMarkup);
-        updateStatus('Preview');
-        return;
-    }
+        try {
+            const logs = [];
+            const capture = (method, type) => (...args) => {
+                logs.push({ type, args });
+                method(...args);
+            };
 
-    const originalLog = console.log;
-    const originalError = console.error;
-    const originalWarn = console.warn;
-    const originalInfo = console.info;
+            console.log = capture(originalLog, 'log');
+            console.error = capture(originalError, 'error');
+            console.warn = capture(originalWarn, 'warn');
+            console.info = capture(originalInfo, 'info');
 
-    try {
-        const logs = [];
-        const capture = (method, type) => (...args) => {
-            logs.push({ type, args });
-            method(...args);
-        };
+            const result = eval(code);
 
-        console.log = capture(originalLog, 'log');
-        console.error = capture(originalError, 'error');
-        console.warn = capture(originalWarn, 'warn');
-        console.info = capture(originalInfo, 'info');
+            if (logs.length === 0 && result !== undefined) {
+                addOutput(formatValue(result), 'value');
+            } else {
+                logs.forEach(log => {
+                    const formatted = log.args.map(arg => formatValue(arg)).join(' ');
+                    const type = log.type === 'error' ? 'error' :
+                                 log.type === 'warn' ? 'warning' :
+                                 log.type === 'info' ? 'info' : 'success';
+                    addOutput(formatted, type);
+                });
+            }
 
-        const result = eval(code);
+            if (logs.length === 0 && result === undefined) {
+                addOutput('✅ Code executed successfully!', 'success');
+            }
 
-        if (logs.length === 0 && result !== undefined) {
-            addOutput(formatValue(result), 'value');
-        } else {
-            logs.forEach(log => {
-                const formatted = log.args.map(arg => formatValue(arg)).join(' ');
-                const type = log.type === 'error' ? 'error' :
-                             log.type === 'warn' ? 'warning' :
-                             log.type === 'info' ? 'info' : 'success';
-                addOutput(formatted, type);
-            });
+            updateStatus('Success');
+        } catch (error) {
+            addOutput(`❌ Error: ${error.message}`, 'error');
+            updateStatus('Error');
+        } finally {
+            console.log = originalLog;
+            console.error = originalError;
+            console.warn = originalWarn;
+            console.info = originalInfo;
         }
-
-        if (logs.length === 0 && result === undefined) {
-            addOutput('✅ Code executed successfully!', 'success');
-        }
-
-        updateStatus('Success');
-    } catch (error) {
-        addOutput(`❌ Error: ${error.message}`, 'error');
-        updateStatus('Error');
-    } finally {
-        console.log = originalLog;
-        console.error = originalError;
-        console.warn = originalWarn;
-        console.info = originalInfo;
+    } else {
+        updateStatus('Preview');
     }
+
+    renderLivePreview();
 }
 
 
@@ -665,6 +660,7 @@ function switchTab(tabType) {
     store.set('playgroundTab', currentTab);
     updateTabState();
     clearOutput();
+    renderLivePreview();
     showToast(`📝 Switched to ${tabType.toUpperCase()}`, 'info');
 }
 
@@ -682,36 +678,45 @@ function saveCurrentCode() {
     store?.set('playgroundCode', editor.value);
 }
 
-function renderHtmlPreview(code) {
+function renderLivePreview() {
     if (!previewFrame) return;
 
-    const previewDoc = `<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      body {
-        margin: 0;
-        padding: 1rem;
-        font-family: Inter, Arial, sans-serif;
-        background: #fff;
-        color: #111827;
-      }
-      .preview-card {
-        border: 1px solid #e5e7eb;
-        border-radius: 12px;
-        padding: 1rem;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-      }
-    </style>
-  </head>
-  <body>${code}</body>
-</html>`;
+    const htmlContent = editorCodeByTab.html || defaultTemplates.html;
+    const cssContent = editorCodeByTab.css || defaultTemplates.css;
+    const jsContent = editorCodeByTab.javascript || defaultTemplates.javascript;
+    const previewDoc = buildPreviewDocument(htmlContent, cssContent, jsContent);
 
     previewFrame.srcdoc = previewDoc;
     const shell = document.getElementById('preview-shell');
     if (shell) {
         shell.style.display = 'block';
     }
+}
+
+function buildPreviewDocument(htmlContent, cssContent, jsContent) {
+    const html = (htmlContent || '').trim();
+    const css = cssContent || '';
+    const js = jsContent || '';
+    const styleTag = `<style>${css}</style>`;
+    const scriptTag = `<script>try { ${js} } catch (error) { console.error(error && error.message ? error.message : error); }</script>`;
+
+    if (html.startsWith('<!DOCTYPE') || html.startsWith('<html') || html.includes('<head') || html.includes('<body')) {
+        return html
+            .replace('</head>', `${styleTag}</head>`)
+            .replace('</body>', `${scriptTag}</body>`);
+    }
+
+    return `<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    ${styleTag}
+  </head>
+  <body>
+    ${html}
+    ${scriptTag}
+  </body>
+</html>`;
 }
 
 /**

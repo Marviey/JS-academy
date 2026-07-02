@@ -52,11 +52,7 @@ export class Store {
             soundEnabled: true,
             animationsEnabled: true,
             fontSize: 'medium',
-            hasSeenWelcome: false,
-            leaderboard: {
-                xp: [],
-                streak: []
-            }
+            hasSeenWelcome: false
         };
     }
 
@@ -120,9 +116,6 @@ export class Store {
         }
         if (!this.state.progress) {
             this.state.progress = {};
-        }
-        if (!this.state.leaderboard) {
-            this.state.leaderboard = { xp: [], streak: [] };
         }
     }
 

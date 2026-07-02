@@ -813,13 +813,12 @@ function setupEventListeners(container) {
             const lessonId = parseInt(lesson.dataset.lesson);
             const unlocked = store.get('unlockedLessons', [0]);
             if (unlocked.includes(lessonId)) {
-                // Navigate to lesson
                 router.navigate('lessons');
-                // Dispatch event to load specific lesson
-                const event = new CustomEvent('load-lesson', {
-                    detail: { lessonId }
-                });
-                document.dispatchEvent(event);
+                setTimeout(() => {
+                    document.dispatchEvent(new CustomEvent('load-lesson', {
+                        detail: { lessonId }
+                    }));
+                }, 60);
             } else {
                 showToast('🔒 Complete previous lessons to unlock this one.', 'warning');
             }

@@ -182,8 +182,8 @@
     font-size: var(--font-size-sm);
     line-height: 1.8;
     color: var(--text-primary);
-    min-height: 240px;
-    max-height: 420px;
+    min-height: 320px;
+    max-height: 620px;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
@@ -209,7 +209,7 @@
 
 .playground-output .output-body .preview-frame {
     width: 100%;
-    min-height: 240px;
+    min-height: 320px;
     border: none;
     background: white;
 }
